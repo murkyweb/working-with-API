@@ -21,3 +21,9 @@ button {
   margin-top: 20px;
   padding: 10px 20px;
 }
+
+input {
+  padding: 5px 10px;
+  outline: none;
+  margin-bottom: 20px;
+}
