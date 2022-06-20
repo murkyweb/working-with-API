@@ -14,6 +14,10 @@ const getImage = (input) => {
     })
     .then(function (response) {
       img.src = response.data.images.original.url;
+    })
+    .catch(function (err) {
+      img.src = "error.bmp";
+      console.log(err);
     });
 };
 
