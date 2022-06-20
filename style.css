@@ -13,3 +13,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+button {
+  align-self: center;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
