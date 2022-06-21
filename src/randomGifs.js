@@ -3,6 +3,7 @@ import ErrImg from "./no-sign.jpg";
 const randomGifs = (function () {
   const populate = () => {
     const container = document.querySelector(".container");
+    container.className = "container gifs";
     container.innerHTML = `<input type="search" name="search" id="search" />
     <img src="#" />
     <button>New Image</button>`;
