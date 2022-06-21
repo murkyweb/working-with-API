@@ -17,7 +17,7 @@ const randomActivities = (function () {
     const activityType = document.querySelector(".type");
 
     button.addEventListener("click", function () {
-      fetch("http://www.boredapi.com/api/activity/", {
+      fetch("https://www.boredapi.com/api/activity/", {
         mode: "cors",
       })
         .then((response) => {
