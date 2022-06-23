@@ -25,23 +25,16 @@ const randomGifs = (function () {
     });
   };
 
-  const getImage = (input) => {
+  const getImage = async (input) => {
     const img = document.querySelector("img");
-    fetch(
+    const response = await fetch(
       `https://api.giphy.com/v1/gifs/translate?api_key=LeFroF97wlzZOFiy7Kq0XAF65JEWNXU2&s=${input}`,
       {
         mode: "cors",
       }
-    )
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (response) {
-        img.src = response.data.images.original.url;
-      })
-      .catch(function () {
-        img.src = ErrImg;
-      });
+    );
+    const imageData = await response.json();
+    img.src = imageData.data.images.original.url;
   };
   return { init };
 })();
