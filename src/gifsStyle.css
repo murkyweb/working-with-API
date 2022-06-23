@@ -6,14 +6,13 @@
   align-self: center;
   border: none;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: 20px 0px;
   padding: 10px 20px;
 }
 
 .gifs > input {
   padding: 5px 10px;
   outline: none;
-  margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 

@@ -5,8 +5,8 @@ const randomGifs = (function () {
     const container = document.querySelector(".container");
     container.className = "container gifs";
     container.innerHTML = `<input type="search" name="search" id="search" />
-    <img src="#" />
-    <button>New Image</button>`;
+    <button>New Image</button>
+    <img src="#" />`;
   };
 
   const init = () => {
